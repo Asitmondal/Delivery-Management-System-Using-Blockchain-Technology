@@ -7,7 +7,7 @@
 <div class="aside">
     <div class="logo">
         <img src="../img/logo.jpg" alt="logo" />
-        <a href="#">Deshboard</a>
+        <a href="#">Dashboard</a>
     </div>
     <div class="nav-toggler">
         <span></span>
@@ -16,7 +16,7 @@
         <li>
             <a href="#"><i class="fa fa-home"></i> Home</a>
         </li>
-        <li>
+        <li class="decrease">
             <a href="#"><i class="fa fa-user"></i>
                 <%= agent.userty %>:<%= agent.name %>
             </a>
@@ -39,12 +39,10 @@
     <div class="card">
         <div class="content">
             <div class="title">Total Couriers</div>
-            <div class="price">0</div>
-
+            <div class="price" id="totalCouriersDisplay">0</div>
+                
         </div>
-        <!-- <button>
-                        Buy now
-                      </button> -->
+        <button id="showTotalCouriersButton">Show Total Couriers</button>
     </div>
     <div class="card">
         <div class="content">
@@ -52,18 +50,18 @@
             <div class="price">0</div>
 
         </div>
-        <!-- <button>
-                        Buy now
-                      </button> -->
+        <button onclick="">
+                        Accepted Couriers
+                      </button>
     </div>
     <div class="card">
         <div class="content">
             <div class="title">Dispatched Couriers</div>
             <div class="price">0</div>
 
-            <!-- <button>
-                        Buy now
-                      </button> -->
+            <button>
+                        Dispatched Couriers
+                      </button>
         </div>
     </div>
     <div class="card">
@@ -72,9 +70,9 @@
             <div class="price">0</div>
 
         </div>
-        <!-- <button>
-                        Buy now
-                      </button> -->
+        <button>
+                       Unsuccessful Couriers
+                      </button>
     </div>
 </div>
 <!-- ====== Card Section End ====== -->
