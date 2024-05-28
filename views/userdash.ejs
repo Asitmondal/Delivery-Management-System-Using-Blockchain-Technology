@@ -4,7 +4,7 @@
 <div class="aside">
     <div class="logo">
         <img src="../img/logo.jpg" alt="logo" />
-        <a href="#">Deshboard</a>
+        <a href="#">Dashboard</a>
     </div>
     <div class="nav-toggler">
         <span></span>
@@ -13,7 +13,7 @@
         <li>
             <a href="#" ><i class="fa fa-home"></i> Home</a>
         </li>
-        <li>
+        <li class="decrease">
             <a href="#"><i class="fa fa-user"></i><%= user.userty %>:<%= user.name %></a>
         </li>
         <li>
@@ -61,15 +61,15 @@
     </div>
 </div>
 <!-- ====== Card Section End ====== -->
-<!-- ====== Tracking Section ==== -->
+<!-- ====== Tracking Section #YWSNWDAAW ==== -->
 <div class="tracking-container">
-    <h2>Order <span class="order-number">#YWSNWDAAW</span></h2>
+    <h2>Order: <span class="order-number"></span><%= user.id %></h2>
     <div class="progress-bar">
         <div class="progress2">
             <div class="progress-step2 complete"></div>
-            <div class="progress-step2 complete"></div>
-            <div class="progress-step2"></div>
-            <div class="progress-step2"></div>
+            <div class="progress-step2 ball"></div>
+            <div class="progress-step2 ball" ></div>
+            <div class="progress-step2 ball"></div>
         </div>
     </div>
     <div class="status-icons">
@@ -91,7 +91,7 @@
         </div>
     </div>
     <div class="tracking-info">
-        <p>Expected Arrival <span class="arrival-date">29 Aug 2022</span></p>
+        <p>Expected Arrival <span class="arrival-date">5th Jun 2024</span></p>
         <p>USPS <span class="usps-number">2374723467163473124234</span></p>
     </div>
 

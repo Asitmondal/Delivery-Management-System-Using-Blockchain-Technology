@@ -463,3 +463,12 @@ button {
   min-height: 99vh;
   width: 100%;
 }
+/* .progress2 :nth-child(3):active,
+.progress2 :nth-child(3):hover
+{
+  background-color: #3366ff;
+} */
+
+.hack{
+  background-color: #3366ff;
+}

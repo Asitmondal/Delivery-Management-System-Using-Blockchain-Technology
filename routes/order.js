@@ -9,7 +9,18 @@ const { render } = require("ejs");
 router.get("/updateorder", (req, res) => res.render("updateorder"));
 // Add Order
 router.get("/addorder", (req, res) => res.render("addorder"));
-//
+// Total order
+router.get("/agentdash", async (req, res) => {
+  try {
+    const totalCouriers = await Order.countDocuments({});
+    res.json({ total: totalCouriers });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Server Error");
+  }
+});
+
+
 
 router.post("/addorder", (req, res) => {
   const { pickupad,dropad } = req.body;
